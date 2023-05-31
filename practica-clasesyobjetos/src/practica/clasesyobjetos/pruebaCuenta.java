@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package practica.clasesyobjetos;
 
  import java.util.Scanner;
@@ -16,15 +13,13 @@ public class pruebaCuenta {
         Scanner entrada= new Scanner(System.in);
         
         //Creamos un objeto cuenta y lo asignamos a mi cuenta
-        Cuenta miCuenta=new Cuenta();
+         Cuenta cuenta1 = new Cuenta("Jane Green");
+         Cuenta cuenta2 = new Cuenta("John Blue");
         
-       
+       System.out.printf("El nombre de cuenta1 es: %s%n", cuenta1.obtenerNombre());
+       System.out.printf("El nombre de cuenta2 es: %s%n", cuenta2.obtenerNombre());
         
-        System.out.println("Introduzca el nombre: ");
-        String elNombre=entrada.nextLine();
-        miCuenta.establecerNombre(elNombre);//llamamos al metodo obtener nombre
         
-        System.out.printf("El nombre en el objeto miCuenta es:%n%s%n",miCuenta.obtenerNombre());
         
         
     }
